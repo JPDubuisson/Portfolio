@@ -33,4 +33,4 @@ Le portfolio est construit avec les technologies suivantes :
 
 1. Clonez ce dépôt sur votre machine locale :
    ```bash
-   'git clone https://github.com/JPDubuisson/Portfolio.git'
+   git clone https://github.com/JPDubuisson/Portfolio.git
