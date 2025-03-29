@@ -4,6 +4,7 @@ body {
   background-color: #f0f4f8;
   color: #333;
   line-height: 1.6;
+  padding-top: 80px;
 }
 
 #bienvenue {
@@ -26,31 +27,65 @@ h1, h3 {
 
 /* Navbar */
 .navbar {
-  background-color: #ffffff; /* Assure que la couleur de fond est en accord avec le reste du site */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre subtile pour la navbar */
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 15px 30px;
-  position: fixed; /* Fixe la navbar en haut */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Prend toute la largeur de l'écran */
-  z-index: 1000; /* S'assurer que la navbar est au-dessus des autres éléments */
-  transition: top 0.3s ease; /* Pour un effet fluide lors du changement de position */
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Pour éviter que le contenu passe sous la navbar fixe */
-body {
-  padding-top: 80px; /* Ajuste cette valeur selon la hauteur de ta navbar */
+/* Logo */
+.nav-logo {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+}
+
+/* Alignement des éléments */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+/* Centrer les liens */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
 }
 
 .navbar-nav .nav-link {
   font-size: 1.2rem;
-  padding: 10px 20px;
+  padding: 10px 15px;
   color: #333;
   transition: color 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #4A90E2; /* Garde l'effet bleu au survol */
+  color: #4A90E2;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 
